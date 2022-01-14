@@ -22,6 +22,7 @@ header .logo {
     margin:0;
     font-family: 'Shrikhand', cursive;
 }
+
 /*location*/
 .location {
     background-color: #f3f3f3;
@@ -31,11 +32,47 @@ header .logo {
     justify-content: center;
     align-items: center;
     gap: 20px;
-  }
+}
 
-  .location p {
-      font-size: 16px;
-  }
+.location p {
+    font-size: 16px;
+}
 
+  /*hero section*/
+.hero {
+    text-align: center;
+    padding: 40px 0px;
+}
+.hero h2 {
+    font-size: 25px;
+}
+.hero p {
+    font-size: 20px;
+    color: #7a7a7a;
+}
+.gradient {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient(180deg, #FF79DA  0%, #9356DC 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 2px 3px 10px -3px #000000;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.gradient:hover {
+    opacity: 0.9;
+    transition: .3s;
+    box-shadow: 2px 3px 15px -3px #000000;
+}
+
+
+
+  
+
+
+  
   
   
