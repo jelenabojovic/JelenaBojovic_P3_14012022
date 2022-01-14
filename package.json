@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "P3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jelenabojovic/JelenaBojovic_P3_14012022.git"
+  },
+  "author": "Jelena Bojovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jelenabojovic/JelenaBojovic_P3_14012022/issues"
+  },
+  "homepage": "https://github.com/jelenabojovic/JelenaBojovic_P3_14012022#readme"
+}
