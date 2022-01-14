@@ -22,3 +22,20 @@ header .logo {
     margin:0;
     font-family: 'Shrikhand', cursive;
 }
+/*location*/
+.location {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .location p {
+      font-size: 16px;
+  }
+
+  
+  
