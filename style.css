@@ -8,7 +8,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/*header*/
 h1 {
   text-align: center;
   box-shadow: 0px 0px 10px grey;
@@ -22,7 +21,6 @@ header .logo {
   font-family: "Shrikhand", cursive;
 }
 
-/*location*/
 .location {
   background-color: #f3f3f3;
   text-align: center;
@@ -32,21 +30,17 @@ header .logo {
   align-items: center;
   gap: 20px;
 }
-
 .location p {
   font-size: 16px;
 }
 
-/*hero section*/
 .hero {
   text-align: center;
   padding: 40px 0px;
 }
-
 .hero h2 {
   font-size: 25px;
 }
-
 .hero p {
   font-size: 20px;
   color: #7a7a7a;
@@ -60,15 +54,68 @@ header .logo {
   border: none;
   border-radius: 30px;
   padding: 20px;
-  box-shadow: 2px 3px 10px -3px #000000;
   margin-top: 15px;
-  cursor: pointer;
+  box-shadow: 2px 3px 10px -3px #000000;
 }
-
 .gradient:hover {
   opacity: 0.9;
   transition: 0.3s;
   box-shadow: 2px 3px 15px -3px #000000;
+  cursor: pointer;
+}
+
+.functioning-container {
+  padding: 30px 15px;
+  background-color: white;
+}
+
+.functioning {
+  background-color: white;
+}
+.functioning h2 {
+  margin-left: 15px;
+}
+.functioning-choices {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .functioning-choices {
+    flex-direction: column;
+  }
+}
+.functioning-choice {
+  background-color: #f6f6f6;
+  padding: 20px 25px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  box-shadow: 2px 3px 10px -3px #000000;
+}
+.functioning-choice:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 2px 3px 15px -3px #000000;
+  cursor: pointer;
+}
+.functioning-choice i {
+  margin: 0 20px;
+  color: #7a7a7a;
+}
+.functioning-choice i:hover {
+  color: #9356DC;
+}
+.functioning-number {
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  transform: translateX(-140%);
 }
 
 /*# sourceMappingURL=style.css.map */

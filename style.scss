@@ -1,4 +1,17 @@
+@mixin box-shadow {
+    box-shadow: 2px 3px 10px -3px #000000;
+}
+@mixin button-hover {
+    opacity: 0.9;
+    transition: 0.3s;
+    box-shadow: 2px 3px 15px -3px #000000;
+    cursor:pointer;
+  }
 
+  $color-primary: #9356DC;
+  $color-secondary: #FF79DA;
+  $color-tertiary: #99E2D0;
+  
 * {
     box-sizing: border-box;
 }
@@ -9,7 +22,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*header*/
+// header
 h1 {
     text-align: center;
     box-shadow: 0px 0px 10px grey;
@@ -23,7 +36,7 @@ header .logo {
     font-family: 'Shrikhand', cursive;
 }
 
-/*location*/
+//location
 .location {
     background-color: #f3f3f3;
     text-align: center;
@@ -32,45 +45,98 @@ header .logo {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    & p {
+  font-size: 16px;
+   }
 }
 
-.location p {
-    font-size: 16px;
-}
 
-  /*hero section*/
+  // hero section
 .hero {
     text-align: center;
     padding: 40px 0px;
-}
-.hero h2 {
+    & h2 {
     font-size: 25px;
-}
-.hero p {
+    }
+    & p {
     font-size: 20px;
     color: #7a7a7a;
+     }
 }
 .gradient {
     color:white;
     font-weight: bold;
     font-size: 20px;
-    background: linear-gradient(180deg, #FF79DA  0%, #9356DC 100%);
+    background: linear-gradient(180deg, $color-secondary  0%,  $color-primary 100%);
     border: none;
     border-radius: 30px;
     padding: 20px;
-    box-shadow: 2px 3px 10px -3px #000000;
     margin-top: 15px;
-    cursor: pointer;
+    @include box-shadow;
+ &:hover {
+    @include button-hover;
+  }
 }
-.gradient:hover {
-    opacity: 0.9;
-    transition: .3s;
-    box-shadow: 2px 3px 15px -3px #000000;
+ // functioning
+ .functioning-container {
+     padding: 30px 15px;
+     background-color: white;
+ }
+ .functioning {
+     background-color:white;
+    
+    & h2 {
+        margin-left:15px;
+    }
+
+    &-choices {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    @media screen and (max-width: 767px){
+        flex-direction:column;
+    }
+    }
+
+    &-choice {
+    background-color: #f6f6f6;
+    padding: 20px 25px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    @include box-shadow;
+    }
+    &-choice:hover {
+        @include button-hover;
+    }
+    &-choice i {
+        margin: 0 20px;
+        color: #7a7a7a;
+    }
+    &-choice i:hover {
+        color: $color-primary;
+    }
+
+    &-number {
+     background-color: $color-primary;
+     color: white;
+     position:absolute;
+     padding: 3px 8px 3px 8px;
+     border-radius: 500px;
+     transform: translateX(-140%);
+    }
+    
+    
 }
 
+    
 
+     
+ 
 
-  
 
 
   
