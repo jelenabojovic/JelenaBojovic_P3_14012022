@@ -73,17 +73,19 @@ header .logo {
   background-color: white;
 }
 .functioning h2 {
-  margin-left: 15px;
+  margin-left: 20px;
 }
 .functioning-choices {
-  margin-left: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   justify-content: space-around;
-  gap: 30px;
+  gap: 50px;
 }
 @media screen and (max-width: 767px) {
   .functioning-choices {
     flex-direction: column;
+    gap: 20px;
   }
 }
 .functioning-choice {
