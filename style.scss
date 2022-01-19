@@ -1,6 +1,7 @@
 @mixin box-shadow {
     box-shadow: 2px 3px 10px -3px #000000;
 }
+
 @mixin button-hover {
     opacity: 0.9;
     transition: 0.3s;
@@ -20,6 +21,11 @@ body {
     margin:0;
     background-color: #f6f6f6;
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
 // header
@@ -98,7 +104,7 @@ header .logo {
     @media screen and (max-width: 767px){
         flex-direction:column;
         gap:20px;
-    }
+      }
     }
 
     &-choice {
@@ -121,7 +127,6 @@ header .logo {
     &-choice i:hover {
         color: $color-primary;
     }
-
     &-number {
      background-color: $color-primary;
      color: white;
@@ -130,11 +135,81 @@ header .logo {
      border-radius: 500px;
      transform: translateX(-140%);
     }
-    
-    
+}
+//restaurants
+.restaurants {
+    margin: 0 25px;
+    padding: 25px 0;
+h2 {
+    padding-bottom: 10px;
+}
 }
 
-    
+.restaurants-cards {
+    display:flex;
+    justify-content:space-around;
+    gap:20px;
+    flex-wrap: wrap;
+     @media screen and (max-width: 767px){
+        flex-direction: column;
+     }
+
+    &-menu {
+    background-color: white;
+    border-radius: 25px;
+    padding-bottom: 5px;
+    height:100%;
+    width:45%;
+    @media screen and (max-width: 767px){
+        width:100%;
+    }
+        
+   & img {
+     height:180px;
+     width: 100%;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 25px 25px 0px 0px;
+     @media screen and (max-width: 767px){
+        height:210px;
+        width:100%;
+       }
+    }
+    &-description {
+        position:relative;
+        h3,p{
+        margin: 10px 20px;
+        }    
+        i {
+            font-size: 30px;
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform: translateY(-50%);
+
+        }
+    }
+   }
+ }
+
+.new {
+    position: relative;
+}
+.new::before {
+    content: "Nouveau";
+    position: absolute;
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    height: 25px;
+    width: 90px;
+    top:30px;
+    right:20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+
 
      
  
