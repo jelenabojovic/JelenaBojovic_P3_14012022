@@ -127,7 +127,7 @@ header .logo {
 
 .restaurants {
   margin: 0 25px;
-  padding: 25px 0;
+  padding: 35px 0;
 }
 .restaurants h2 {
   padding-bottom: 10px;
@@ -182,12 +182,10 @@ header .logo {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.new {
+.restaurants-cards .new {
   position: relative;
 }
-
-.new::before {
+.restaurants-cards .new::before {
   content: "Nouveau";
   position: absolute;
   background-color: #99E2D0;
@@ -199,6 +197,30 @@ header .logo {
   display: flex;
   justify-content: center;
   padding-top: 8px;
+}
+.restaurants-cards .heart {
+  cursor: pointer;
+}
+.restaurants-cards .heart:hover {
+  transition: 0.5s ease-in-out;
+  display: inline-block;
+  opacity: 1;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
