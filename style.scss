@@ -14,7 +14,8 @@
   $color-tertiary: #99E2D0;
   $gradient: 180deg, $color-secondary  0%,  $color-primary 100%;
   
-* {
+* 
+{
     box-sizing: border-box;
 }
 
@@ -97,8 +98,8 @@ header .logo {
     }
 
     &-choices {
-    margin-left: 20px;
-    margin-right:20px;
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     justify-content: space-around;
     gap: 50px;
@@ -161,6 +162,7 @@ h2 {
     padding-bottom: 5px;
     height:100%;
     width:45%;
+    @include box-shadow;
     @media screen and (max-width: 767px){
         width:100%;
     }
@@ -188,9 +190,12 @@ h2 {
             top:50%;
             transform: translateY(-50%);
         }
-    
-    }
+     }
    }
+.restaurants-cards-menu:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 3px 15px -3px #000000;
+}
 
 .new {
     position: relative;
@@ -235,6 +240,28 @@ h2 {
 }
 }
 
+//footer
+footer {
+    background-color: #353535;
+    color:white;
+    padding: 0px 0 25px 30px;
+}
+ h4 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.block {
+    padding-bottom: 10px;
+}
+
+.fa-utensils {
+    margin-right: 12px;
+}
+.fa-hands-helping {
+    margin-right: 5px;
+}
 
 
      
@@ -242,6 +269,5 @@ h2 {
 
 
 
-  
   
   
