@@ -9,6 +9,32 @@
     cursor:pointer;
   }
 
+@mixin animated-heart {
+        cursor: pointer;
+        &:hover {
+            transition: 0.5s ease-in-out;
+            display: inline-block;
+            opacity: 1;
+            background: linear-gradient($gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:transparent;
+            font-weight: bold;
+        }
+    }
+    @keyframes heart {
+        0% {
+            opacity:0;
+        }
+        50% {
+            opacity:0.5;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+    
+
   $color-primary: #9356DC;
   $color-secondary: #FF79DA;
   $color-tertiary: #99E2D0;
@@ -215,28 +241,7 @@ h2 {
 }
 
 .heart {
-    cursor: pointer;
-    &:hover {
-        transition: 0.5s ease-in-out;
-        display: inline-block;
-        opacity: 1;
-        background: linear-gradient($gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color:transparent;
-        font-weight: bold;
-    }
-}
-@keyframes heart {
-    0% {
-        opacity:0;
-    }
-    50% {
-        opacity:0.5;
-    }
-    100% {
-        opacity:1;
-    }
+    @include animated-heart;
 }
 }
 
@@ -292,6 +297,18 @@ h1 {
     object-fit: cover;
 }
 
+// menu title
+.menu-title {
+    display: flex;
+    font-family: 'Shrikhand', cursive;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 25px;
+}
+.heart {
+    font-size: 25px;
+    @include animated-heart;
+}
 
 
      
