@@ -309,6 +309,16 @@ h1 {
     font-size: 25px;
     @include animated-heart;
 }
+.menus {
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0 0;
+    width:100%;
+    position:relative;
+    margin-top: -10px;
+    @media screen and (max-width: 767px){
+        margin-top:-50px;
+       }
+}
 
 
      
