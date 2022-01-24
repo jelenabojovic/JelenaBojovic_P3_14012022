@@ -332,11 +332,22 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
-.meals-title h3 {
+.meals h3 {
   text-transform: uppercase;
   font-weight: 400;
+  position: relative;
 }
-.meals-subtitle {
+.meals h3::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 50px;
+  background-color: #99E2D0;
+  top: 25px;
+  left: 0;
+}
+
+.meal-title {
   background-color: white;
   border-radius: 15px;
   box-shadow: 2px 3px 10px -3px #000000;
@@ -346,26 +357,27 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.meals-subtitle h4 {
+.meal-title h4 {
   padding-left: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin: 0;
 }
-.meals-subtitle p {
+.meal-title p {
   margin: 0;
 }
-.meals-subtitle p, .meals h4 {
+.meal-title p, .meal-title h4 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.meals-info {
+
+.meal-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
 }
-.meals-info span {
+.meal-info span {
   margin-right: 5px;
   font-weight: bold;
 }
