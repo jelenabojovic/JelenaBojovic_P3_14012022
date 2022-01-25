@@ -430,4 +430,29 @@ h1 {
   transition: transform 500ms ease-in-out;
 }
 
+.menu-gradient {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 2px 3px 10px -3px #000000;
+  margin-left: 40%;
+  margin-bottom: 30px;
+}
+.menu-gradient:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+  box-shadow: 2px 3px 15px -3px #000000;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .menu-gradient {
+    margin-left: 50px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

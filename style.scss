@@ -33,7 +33,22 @@
             opacity:1;
         }
     }
-}  
+} 
+
+@mixin gradient {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    background: linear-gradient($gradient);
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 15px;
+    @include box-shadow;
+ &:hover {
+    @include button-hover;
+  }
+}
 
   $color-primary: #9356DC;
   $color-secondary: #FF79DA;
@@ -99,18 +114,7 @@ header .logo {
      }
 }
 .gradient {
-    color:white;
-    font-weight: bold;
-    font-size: 20px;
-    background: linear-gradient($gradient);
-    border: none;
-    border-radius: 30px;
-    padding: 20px;
-    margin-top: 15px;
-    @include box-shadow;
- &:hover {
-    @include button-hover;
-  }
+    @include gradient;
 }
  // functioning
  .functioning-container {
@@ -421,6 +425,15 @@ h1 {
 & .fa-check-circle {
     color:white;
     transition: transform 500ms ease-in-out;
+    }
+}
+
+.menu-gradient {
+    @include gradient;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    @media screen and (max-width: $breakpoint){
+        margin-left:50px;
     }
 }
 
