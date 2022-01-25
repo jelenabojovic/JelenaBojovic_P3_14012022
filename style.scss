@@ -370,15 +370,6 @@ h1 {
 &:hover .fa-check-circle {
     transform: rotate(360deg) ;
 }
-@keyframes circle {
-    0% {
-        transform: rotate(0);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
-}
 
 & h4 {
     padding-left:10px;

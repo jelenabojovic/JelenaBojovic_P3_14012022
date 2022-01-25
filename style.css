@@ -379,14 +379,6 @@ h1 {
 .meal-title:hover .fa-check-circle {
   transform: rotate(360deg);
 }
-@keyframes circle {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .meal-title h4 {
   padding-left: 10px;
   font-family: "Roboto", sans-serif;
