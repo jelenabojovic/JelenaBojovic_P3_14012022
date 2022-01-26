@@ -361,7 +361,7 @@ h1 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    transition: transform 330ms ease-in-out;
+    transition: padding-right 450ms ease-in-out;
 &:hover {
     padding-right: 60px;
 
@@ -372,8 +372,9 @@ h1 {
 }
 
 &:hover .fa-check-circle {
-    transform: rotate(360deg) ;
+    transform: rotate(360deg);
 }
+
 
 & h4 {
     padding-left:10px;
@@ -421,13 +422,13 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 330ms ease-in-out;
 
 & .fa-check-circle {
     color:white;
     transition: transform 500ms ease-in-out;
     }
 }
-
 .menu-gradient {
     @include gradient;
     margin-left: 40%;

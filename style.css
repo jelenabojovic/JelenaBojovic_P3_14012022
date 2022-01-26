@@ -367,7 +367,7 @@ h1 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: transform 330ms ease-in-out;
+  transition: padding-right 450ms ease-in-out;
 }
 .meal-title:hover {
   padding-right: 60px;
@@ -424,6 +424,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 330ms ease-in-out;
 }
 .meal-validation .fa-check-circle {
   color: white;
