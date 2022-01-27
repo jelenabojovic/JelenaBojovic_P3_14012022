@@ -362,6 +362,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
     transition: padding-right 450ms ease-in-out;
+    animation:opacity 1s both;
 &:hover {
     padding-right: 60px;
 
@@ -390,6 +391,19 @@ h1 {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+@for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+        animation-delay: 100ms * $i;
+    }
+}
+}
+@keyframes opacity {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
 }
 
 .meal-info {
@@ -431,10 +445,11 @@ h1 {
 }
 .menu-gradient {
     @include gradient;
+    width: 200px;
     margin-left: 40%;
     margin-bottom: 30px;
     @media screen and (max-width: $breakpoint){
-        margin-left:50px;
+        margin-left:80px;
     }
 }
 

@@ -368,6 +368,7 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: padding-right 450ms ease-in-out;
+  animation: opacity 1s both;
 }
 .meal-title:hover {
   padding-right: 60px;
@@ -392,7 +393,27 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.meal-title:nth-child(1) {
+  animation-delay: 100ms;
+}
+.meal-title:nth-child(2) {
+  animation-delay: 200ms;
+}
+.meal-title:nth-child(3) {
+  animation-delay: 300ms;
+}
+.meal-title:nth-child(4) {
+  animation-delay: 400ms;
+}
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .meal-info {
   display: flex;
   justify-content: space-between;
@@ -441,6 +462,7 @@ h1 {
   padding: 20px;
   margin-top: 15px;
   box-shadow: 2px 3px 10px -3px #000000;
+  width: 200px;
   margin-left: 40%;
   margin-bottom: 30px;
 }
@@ -452,7 +474,7 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .menu-gradient {
-    margin-left: 50px;
+    margin-left: 80px;
   }
 }
 
