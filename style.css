@@ -43,8 +43,8 @@ a {
   justify-content: space-between;
 }
 .spinner-elements span {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   border-radius: 50%;
   background-color: #9356DC;
   animation-name: dots;
@@ -140,7 +140,7 @@ header .logo {
   justify-content: space-around;
   gap: 50px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 990px) {
   .functioning-choices {
     flex-direction: column;
     gap: 20px;
@@ -219,7 +219,7 @@ header .logo {
 }
 @media screen and (max-width: 767px) {
   .restaurants-cards-menu img {
-    height: 210px;
+    height: 220px;
     width: 100%;
   }
 }
@@ -237,7 +237,6 @@ header .logo {
   transform: translateY(-50%);
 }
 .restaurants-cards .restaurants-cards-menu:hover {
-  transform: scale(1.01);
   box-shadow: 2px 3px 15px -3px #000000;
 }
 .restaurants-cards .new {
@@ -393,6 +392,12 @@ h1 {
 }
 @media screen and (max-width: 1200px) {
   .meals {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .meals {
     grid-template-columns: 1fr;
   }
 }
@@ -421,7 +426,6 @@ h1 {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: padding-right 450ms ease-in-out;
-  animation: opacity 1s both;
 }
 .meal-title:hover {
   padding-right: 60px;
@@ -446,24 +450,25 @@ h1 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.meal-title:nth-child(1) {
-  animation-delay: 100ms;
+
+.grid {
+  animation: opacity 1s both;
 }
-.meal-title:nth-child(2) {
-  animation-delay: 200ms;
-}
-.meal-title:nth-child(3) {
+.grid:nth-child(1) {
   animation-delay: 300ms;
 }
-.meal-title:nth-child(4) {
-  animation-delay: 400ms;
+.grid:nth-child(2) {
+  animation-delay: 600ms;
+}
+.grid:nth-child(3) {
+  animation-delay: 900ms;
 }
 
 @keyframes opacity {
-  0% {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -527,7 +532,7 @@ h1 {
 }
 @media screen and (max-width: 767px) {
   .menu-gradient {
-    margin-left: 80px;
+    margin-left: 90px;
   }
 }
 
