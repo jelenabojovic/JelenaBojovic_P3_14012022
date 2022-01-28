@@ -418,6 +418,7 @@ h1 {
 
 .meal-title {
   background-color: white;
+  margin-right: 10px;
   border-radius: 15px;
   box-shadow: 2px 3px 10px -3px #000000;
   position: relative;
@@ -452,7 +453,7 @@ h1 {
 }
 
 .grid {
-  animation: opacity 1s both;
+  animation: opacity 3s both;
 }
 .grid:nth-child(1) {
   animation-delay: 300ms;

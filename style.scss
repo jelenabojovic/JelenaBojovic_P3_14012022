@@ -414,6 +414,7 @@ h1 {
 }
 .meal-title {
     background-color: white;
+    margin-right:10px;
     border-radius: 15px;
     @include box-shadow;
     position:relative;
@@ -452,7 +453,7 @@ h1 {
 }
 }
 .grid {
-    animation:opacity 1s both;
+    animation:opacity 3s both;
 
 @for $i from 1 through 3 {
     &:nth-child(#{$i}) {
