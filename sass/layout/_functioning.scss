@@ -1,0 +1,54 @@
+// functioning
+.functioning-container {
+    padding: 20px 15px 50px 15px;
+    background-color: white;
+}
+.functioning {
+    background-color:white;
+   
+   & h2 {
+       margin-left:20px;
+   }
+
+   &-choices {
+   margin-left: 30px;
+   margin-right: 30px;
+   display: flex;
+   justify-content: space-around;
+   gap: 50px;
+   @media screen and (max-width: 990px){
+       flex-direction:column;
+       gap:20px;
+     }
+   }
+
+   &-choice {
+   background-color: #f6f6f6;
+   padding: 20px 25px;
+   border-radius: 20px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   flex-grow: 1;
+   @include box-shadow;
+   }
+   &-choice:hover {
+       @include button-hover;
+   }
+   &-choice i {
+       margin: 0 20px;
+       color: #7a7a7a;
+   }
+   &-choice i:hover {
+       color: $color-primary;
+   }
+   &-number {
+    background-color: $color-primary;
+    color: white;
+    position:absolute;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    transform: translateX(-140%);
+   }
+}
+

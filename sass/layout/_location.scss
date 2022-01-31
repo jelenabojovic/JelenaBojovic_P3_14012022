@@ -1,0 +1,13 @@
+//location
+.location {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    & p {
+  font-size: 16px;
+   }
+}

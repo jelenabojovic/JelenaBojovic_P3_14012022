@@ -1,0 +1,9 @@
+.menu-gradient {
+    @include gradient;
+    width: 200px;
+    margin-left: 40%;
+    margin-bottom: 30px;
+    @media screen and (max-width: $breakpoint){
+        margin-left:90px;
+    }
+}
