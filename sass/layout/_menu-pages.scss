@@ -52,6 +52,7 @@
 }
 .meal-title {
     background-color: white;
+    margin-bottom: 15px;
     margin-right:10px;
     border-radius: 15px;
     @include box-shadow;
@@ -90,7 +91,7 @@
     overflow: hidden;
 }
 }
-.grid {
+.menu {
     animation:opacity 3s both;
 
 @for $i from 1 through 3 {
@@ -120,9 +121,10 @@
     font-weight: bold;
 }
 
-.grid {
-    display: grid;
-    grid-gap:10px;
+.menu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 5px;
 }
 
 .meal-validation {
